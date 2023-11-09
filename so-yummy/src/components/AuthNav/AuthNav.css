@@ -38,12 +38,20 @@
 .buttonGreen {
 	padding: 20px 40px;
 	border-radius: 20px 50px;
-	border: none;
+	border: 3px solid #8baa36;
 	background-color: #8baa36;
 	font-size: 20px;
 	cursor: pointer;
 	color: white;
+	transition:all 0.5s ease;
+
 }
+
+
+.buttonGreen:hover{
+	background-color: #000;	
+	border:3px solid white
+	}
 
 .buttonTransparent {
 	padding: 20px 40px;
@@ -53,4 +61,11 @@
 	font-size: 20px;
 	cursor: pointer;
 	color: white;
+	transition:all 0.5s ease;
+	
+}
+
+.buttonTransparent:hover{
+background-color: #8baa36;	
+border:3px solid #8baa36
 }
