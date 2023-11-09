@@ -1,0 +1,9 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px 0px 50px;
+}
+
+.logo {
+	cursor: pointer;
+}

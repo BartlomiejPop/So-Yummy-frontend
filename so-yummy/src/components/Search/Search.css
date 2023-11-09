@@ -1,0 +1,38 @@
+.searchField {
+	margin-top: 60px;
+	position: relative;
+	width: 500px;
+}
+
+.searchFieldInput {
+	border: none;
+	height: 70px;
+	border-radius: 20px 50px;
+	width: 100%;
+	padding: 10px 40px;
+	font-size: 20px;
+	border: 1px solid grey;
+}
+
+.searchFieldButton {
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 70px;
+	padding: 10px 40px;
+	font-size: 20px;
+	border-radius: 20px 50px;
+	color: white;
+	border: none;
+	display: flex;
+	align-items: center;
+	background-color: #22252a;
+	cursor: pointer;
+}
+
+.search {
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

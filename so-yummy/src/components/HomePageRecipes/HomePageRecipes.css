@@ -1,0 +1,53 @@
+.HomePageRecipesBg {
+	background-color: #f9f9f9;
+}
+.HomePageRecipes {
+	margin: 50px 100px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px;
+	border-bottom: 1px dashed #8baa36;
+}
+
+.HomePageRecipes:first-child {
+	margin-top: 0;
+}
+
+.HomePageRecipes:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.HomeRecipesList {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	list-style: none;
+}
+
+.HomePageRecipesTitle {
+	font-family: "Roboto";
+	color: #4d4e4e;
+	text-align: center;
+	font-size: 40px;
+}
+
+.HomeRecipesListItem {
+	cursor: pointer;
+}
+
+.HomePageRecipesButton {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	align-self: center;
+	background-color: #8baa36;
+	border: none;
+	cursor: pointer;
+}

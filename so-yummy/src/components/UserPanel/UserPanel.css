@@ -1,0 +1,26 @@
+.userPanel {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.userPanelName {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.userPanelButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 15px;
+	border: none;
+	cursor: pointer;
+	background-color: #8baa36;
+	color: white;
+	padding: 15px;
+	border-radius: 20px 50px;
+	width: 150px;
+	font-size: 20px;
+}

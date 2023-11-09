@@ -1,0 +1,51 @@
+.CategoriesResults {
+	margin: 50px 100px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px;
+}
+
+.CategoriesResults:first-child {
+	margin-top: 0;
+}
+
+.CategoriesResults:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.CategoriesResultList {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	row-gap: 30px;
+	list-style: none;
+}
+
+.CategoriesResultTitle {
+	font-family: "Roboto";
+	color: #4d4e4e;
+	text-align: center;
+	font-size: 50px;
+}
+
+.CategoriesResultItem {
+	cursor: pointer;
+}
+
+.HomePageRecipesButton {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	align-self: center;
+	background-color: #8baa36;
+	border: none;
+	cursor: pointer;
+}

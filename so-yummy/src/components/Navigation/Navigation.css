@@ -1,0 +1,19 @@
+.navigationList {
+	display: flex;
+	list-style: none;
+	width: 60%;
+	justify-content: space-evenly;
+	font-weight: 700;
+	align-items: center;
+}
+
+.navigationItem {
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}

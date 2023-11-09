@@ -1,0 +1,56 @@
+.authNavWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.background {
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.contentWrapper {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	color: white;
+}
+
+.appDescription {
+	text-align: center;
+	font-size: 25px;
+	line-height: 24px;
+}
+
+.buttonsWrapper {
+	margin-top: 40px;
+	display: flex;
+	gap: 50px;
+}
+
+.buttonGreen {
+	padding: 20px 40px;
+	border-radius: 20px 50px;
+	border: none;
+	background-color: #8baa36;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}
+
+.buttonTransparent {
+	padding: 20px 40px;
+	border-radius: 20px 50px;
+	border: 3px solid white;
+	background-color: transparent;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}

@@ -1,0 +1,108 @@
+.addRecipes {
+	padding: 50px;
+	height: 74vh;
+}
+
+.addRecipesTitle {
+	font-size: 50px;
+	font-weight: 700;
+	padding: 0 0 100px 0;
+}
+
+.addRecipesDescription {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
+
+.addRecipesImage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #8baa36;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.addRecipesForm {
+	display: flex;
+	gap: 80px;
+}
+
+.addRecipesInputBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-bottom: 20px;
+}
+
+.formItem {
+	width: 300px;
+	padding: 10px 20px;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid grey;
+	font-size: 18px;
+}
+
+.addRecipesIcon {
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+}
+
+.formItem:focus {
+	outline: none;
+	border-bottom: 2px solid #8baa36;
+}
+
+.addRecipesTextareaBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.addRecipesTextareaWrapper {
+	display: flex;
+	gap: 50px;
+}
+
+.addRecipesTextarea {
+	width: 300px;
+	height: 150px;
+	padding: 20px;
+	border: none;
+	border-radius: 20px;
+	border: 1px solid grey;
+	resize: none;
+	background-color: transparent;
+}
+
+.addRecipesTextarea:focus {
+	outline: none;
+	border: 2px solid #8baa36;
+}
+
+.addRecipesButtonBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.addRecipesSubmitBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.addRecipesButton {
+	padding: 20px 80px;
+	border-radius: 20px 50px;
+	border: none;
+	background-color: #22252a;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}

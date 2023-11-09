@@ -1,0 +1,60 @@
+.introduction {
+	height: 74vh;
+	padding: 50px 80px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-top: 130px;
+	margin-left: 80px;
+}
+
+.title {
+	font-size: 80px;
+}
+
+.titleGreen {
+	color: #8baa36;
+}
+
+.description {
+	margin-top: 50px;
+	font-size: 22px;
+	width: 40%;
+}
+
+.searchField {
+	margin-top: 60px;
+	position: relative;
+	width: 500px;
+}
+
+.searchFieldInput {
+	border: none;
+	height: 70px;
+	border-radius: 20px 50px;
+	width: 100%;
+	padding: 10px 40px;
+	font-size: 20px;
+	border: 1px solid grey;
+}
+
+.searchFieldInput:focus {
+	outline: none;
+	border: 2px solid #8baa36;
+}
+
+.searchFieldButton {
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 70px;
+	padding: 10px 40px;
+	font-size: 20px;
+	border-radius: 20px 50px;
+	color: white;
+	border: none;
+	display: flex;
+	align-items: center;
+	background-color: #22252a;
+	cursor: pointer;
+}

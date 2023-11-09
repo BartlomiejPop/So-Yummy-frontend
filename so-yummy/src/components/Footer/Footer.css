@@ -1,0 +1,92 @@
+.footer {
+	padding: 100px 80px;
+	background-color: #22252a;
+	color: white;
+}
+
+.footerBoxesWrapper {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footerDescriptionBox {
+	width: 30%;
+	gap: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footerLogoField {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footerTitle {
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.footerDescriptionList {
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	gap: 10px;
+}
+
+.footerNewsletterBox {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.newsletterText {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.footerInputBox {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.footerInput {
+	background-color: transparent;
+	color: white;
+	border: 1px solid #9c9c9c;
+	height: 60px;
+	border-radius: 20px;
+	padding: 10px 50px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.footerInput:focus {
+	border: 2px solid #8baa36;
+	outline: none;
+}
+
+.footerButton {
+	height: 60px;
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: #8baa36;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.footerLogo {
+	cursor: pointer;
+}
+
+.emailIcon {
+	left: 15px;
+	position: absolute;
+}
