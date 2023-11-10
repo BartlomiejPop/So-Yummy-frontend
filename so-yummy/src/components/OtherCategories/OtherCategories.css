@@ -13,4 +13,11 @@
 	font-size: 30px;
 	border-radius: 20px 50px;
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.otherCategoriesButton:hover,.otherCategoriesButton:focus{
+
+background-color:#22252a;
+color: white;
 }

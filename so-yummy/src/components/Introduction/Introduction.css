@@ -57,4 +57,9 @@
 	align-items: center;
 	background-color: #22252a;
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.searchFieldButton:hover,.searchFieldButton:focus{
+	background-color: #8baa36
 }

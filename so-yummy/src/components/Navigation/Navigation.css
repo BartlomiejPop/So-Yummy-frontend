@@ -13,7 +13,16 @@
 	text-decoration: none;
 }
 
+
+
 a {
 	text-decoration: none;
 	color: black;
+	transition: color 0.25s ease;
+}
+
+a:hover,a:focus{
+		color:  #8baa36;
+		outline: none;
+
 }
