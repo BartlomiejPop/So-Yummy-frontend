@@ -2,6 +2,8 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import Notiflix from "notiflix";
 
+const baseURL = "https://sleepy-chamber-39700-694ff1ad8c4b.herokuapp.com";
+
 const setAuthToken = (token) => {
 	if (token) {
 		axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -25,10 +27,7 @@ export const addRecipe = createAsyncThunk(
 		}
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.post(
-				"http://localhost:3000/addRecipe",
-				recipe
-			);
+			const response = await axios.post(`${baseURL}/addRecipe`, recipe);
 			Notiflix.Notify.success("Recipe added");
 			return response.data;
 		} catch (e) {
@@ -52,10 +51,7 @@ export const addToFavorites = createAsyncThunk(
 		}
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.post(
-				`http://localhost:3000/addToFavorites`,
-				recipe
-			);
+			const response = await axios.post(`${baseURL}/addToFavorites`, recipe);
 			Notiflix.Notify.success("Recipe added to favorites");
 			return response.data;
 		} catch (e) {
@@ -70,7 +66,7 @@ export const getMyRecipes = createAsyncThunk(
 		const state = thunkAPI.getState();
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.get("http://localhost:3000/myRecipes");
+			const response = await axios.get(`${baseURL}/myRecipes`);
 			const myRecipes = response.data.data;
 			return myRecipes;
 		} catch (e) {
@@ -85,9 +81,7 @@ export const deleteRecipe = createAsyncThunk(
 		const state = thunkAPI.getState();
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.delete(
-				`http://localhost:3000/remove/${recipeId}`
-			);
+			const response = await axios.delete(`${baseURL}/remove/${recipeId}`);
 			return response.data;
 		} catch (e) {
 			return thunkAPI.rejectWithValue(e.message);
@@ -99,7 +93,7 @@ export const addImage = createAsyncThunk("addImage", async (file, thunkAPI) => {
 	const state = thunkAPI.getState();
 	try {
 		setAuthToken(state.auth.token);
-		const response = await axios.post(`http://localhost:3000/addImage`, file);
+		const response = await axios.post(`${baseURL}/addImage`, file);
 		return response.data;
 	} catch (e) {
 		return thunkAPI.rejectWithValue(e.message);
@@ -138,7 +132,7 @@ export const getFavorites = createAsyncThunk(
 		const state = thunkAPI.getState();
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.get("http://localhost:3000/favorites");
+			const response = await axios.get(`${baseURL}/favorites`);
 			const myRecipes = response.data.data;
 
 			return myRecipes;
@@ -155,7 +149,7 @@ export const deleteFromFavorites = createAsyncThunk(
 		try {
 			setAuthToken(state.auth.token);
 			const response = await axios.patch(
-				`http://localhost:3000/deleteFromFavorites/${recipeId}`
+				`${baseURL}/deleteFromFavorites/${recipeId}`
 			);
 			return response.data;
 		} catch (e) {

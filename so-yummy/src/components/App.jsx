@@ -4,6 +4,7 @@ import { useAuth } from "../hooks/useAuth.js";
 import { Layout } from "./Layout";
 import { PrivateRoute } from "./PrivateRoute.js";
 import { RestrictedRoute } from "./RestrictedRoute.js";
+import Login from "../pages/Login";
 
 const WelcomePage = lazy(() => import("../pages/WelcomePage"));
 const RegisterPage = lazy(() => import("../pages/Register"));

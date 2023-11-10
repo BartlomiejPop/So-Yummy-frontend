@@ -2,6 +2,8 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import Notiflix from "notiflix";
 
+const baseURL = "https://sleepy-chamber-39700-694ff1ad8c4b.herokuapp.com";
+
 const setAuthToken = (token) => {
 	if (token) {
 		axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -17,7 +19,7 @@ export const sendEmail = createAsyncThunk(
 
 		try {
 			setAuthToken(state.auth.token);
-			const response = await axios.post(`http://localhost:3000/sendEmail`, {
+			const response = await axios.post(`${baseURL}/sendEmail`, {
 				email: email,
 			});
 			Notiflix.Notify.success("Email sent");
