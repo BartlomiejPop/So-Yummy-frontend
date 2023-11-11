@@ -24,16 +24,18 @@ export default function Login() {
 		const form = e.currentTarget;
 		const password = form.elements.password.value;
 		const email = form.elements.email.value;
-		const response = await dispatch(
-			login({
-				password,
-				email,
-			})
-		);
-		const shouldRedirect = response.payload.status === "success";
-		if (shouldRedirect) {
-			navigate("/home");
-			Notiflix.Notify.success("Logged in");
+		if (password !== "" && email !== "") {
+			const response = await dispatch(
+				login({
+					password,
+					email,
+				})
+			);
+			const shouldRedirect = response.payload.status === "success";
+			if (shouldRedirect) {
+				navigate("/home");
+				Notiflix.Notify.success("Logged in");
+			}
 		}
 	};
 
@@ -74,7 +76,7 @@ export default function Login() {
 								<input
 									className="input"
 									placeholder="Password"
-									type="text"
+									type="password"
 									name="password"
 									required=""
 									value={formData.password}

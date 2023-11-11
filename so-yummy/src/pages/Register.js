@@ -76,7 +76,7 @@ export default function Register() {
 								<input
 									className="input"
 									placeholder="Password"
-									type="text"
+									type="password"
 									name="password"
 									required=""
 								/>

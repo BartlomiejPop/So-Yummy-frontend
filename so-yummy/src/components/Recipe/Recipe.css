@@ -51,6 +51,12 @@
 	background-color: transparent;
 	font-size: 20px;
 	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.recipeFavButton:hover {
+	background-color: #8baa36;
+	color: white;
 }
 
 .recipeTimeBox {
