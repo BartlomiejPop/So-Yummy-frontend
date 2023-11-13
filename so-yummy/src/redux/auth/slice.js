@@ -13,17 +13,21 @@ const authSlice = createSlice({
 	name: "auth",
 	initialState,
 	reducers: {
-		loginUser: (state, action) => {
-			state.user = action.payload;
-			state.isLoggedIn = true;
-		},
-		loginUserError: (state, action) => {
-			state.user = null;
-			state.isLoggedIn = false;
-		},
-		setUsername: (state, action) => {
-			state.user = action.payload;
-		},
+		// logOut: (state, action) => {
+		// 	state.isLoggedIn = false;
+		// 	state.user = { email: null, name: null };
+		// },
+		// loginUser: (state, action) => {
+		// 	state.user = action.payload;
+		// 	state.isLoggedIn = true;
+		// },
+		// loginUserError: (state, action) => {
+		// 	state.user = null;
+		// 	state.isLoggedIn = false;
+		// },
+		// setUsername: (state, action) => {
+		// 	state.user = action.payload;
+		// },
 	},
 	extraReducers: {
 		[register.fulfilled](state, action) {
@@ -46,7 +50,8 @@ const authSlice = createSlice({
 });
 
 // export const { registerUser, setUsername } = authSlice.actions;
-export const { loginUser, loginUserError, setUsername } = authSlice.actions;
+export const { loginUser, loginUserError, setUsername, logOut } =
+	authSlice.actions;
 // export default { loginUser };
 export const authReducer = authSlice.reducer;
 // export default userSlice.reducers;
